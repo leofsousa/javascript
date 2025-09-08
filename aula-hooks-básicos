@@ -1,0 +1,18 @@
+// 1. O que são hooks?
+//     Permitem o uso de vários recursos de forma simples, através de funções.
+// 2. UseState()
+//     Lidar com estado dentro de um componente
+
+import { useEffect } from "react"
+
+//     Serve para armazenar estados e altera-los EX:
+        const [name, setName] = useState('Leonardo')
+// 3. useEffect()
+//      Vai trabalhar com o ciclo de vida de um componente
+//      usado para gerenciamento de estados de uma aplicação
+        useEffect(() => {},['Array de dependencia: usado para gerenciar a alteração'])
+//  4. useMemo()
+//      utilizado para performance, utiliza-se em momentos onde não queremos que algo seja refeito com a alteração de estado
+//      muito utilizado para situações que exigem bastante memória
+//  5. useCallback()
+//      parecido com o useMemo, porém guarda funções e não variáveis
